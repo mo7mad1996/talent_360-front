@@ -1,0 +1,40 @@
+.text:last-of-type {
+  color: #003fad;
+}
+.text:last-of-type::after {
+  content: "";
+}
+
+.text {
+  @apply flex justify-between;
+  gap: 10px;
+}
+.text::after {
+  color: #4caed8;
+  content: ">";
+  display: block;
+  font-size: 20px;
+}
+
+.user {
+  @apply w-10 h-10 rounded-2xl;
+
+  background-size: cover;
+}
+
+.link {
+  @apply h-10 w-10 flex justify-center items-center relative;
+}
+
+.link.active::after {
+  content: "";
+  display: block;
+  width: 10px;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+  background: linear-gradient(0deg, #b22234 -1.2%, #ff0020 99.7%);
+
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}

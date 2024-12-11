@@ -1,0 +1,14 @@
+:root {
+  --text-color: #151d48;
+  --sub-text: ##737791;
+}
+
+.text-color {
+  color: var(--text-color);
+}
+.sub-text {
+  color: var(--text-color);
+}
+.sub-text.Mui-focused {
+  color: var(--text-color) !important;
+}

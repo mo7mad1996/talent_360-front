@@ -1,0 +1,12 @@
+.aside {
+  @apply bg-white  border-r-[1px] py-10 px-[30px]  gap-10 flex flex-col;
+  border-color: #e7eaee;
+}
+
+.active:hover,
+.active {
+  background: #003fad;
+}
+.active img {
+  filter: brightness(5);
+}

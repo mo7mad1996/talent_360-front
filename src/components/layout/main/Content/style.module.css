@@ -1,0 +1,26 @@
+.avatar {
+  @apply w-[120px] aspect-square rounded-3xl relative;
+  background-size: cover;
+}
+.avatar .icon {
+  background-color: #f0f0f0;
+  position: absolute;
+  bottom: -0.4em;
+  right: -0.4em;
+  padding: 0.6em;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.item {
+  @apply p-4 hover:bg-slate-100 block rounded-2xl;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  color: #051d49;
+}
+.item.active:hover,
+.item.active {
+  background: #f4f8fe;
+  color: #135cca;
+}
